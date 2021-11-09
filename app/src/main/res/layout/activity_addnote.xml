@@ -10,30 +10,45 @@
         android:id="@+id/editTextNoteName"
         android:layout_width="376dp"
         android:layout_height="55dp"
+        android:autofillHints="true"
         android:ems="10"
+        android:hint="Name your note"
         android:inputType="text"
-        android:text="Name your note"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNoteName2"
+        android:textColorHint="#989898"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNoteText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.892"
-        android:autofillHints="true" />
+        app:layout_constraintVertical_bias="0.74" />
 
     <EditText
-        android:id="@+id/editTextNoteName2"
+        android:id="@+id/editTextNoteText"
         android:layout_width="376dp"
-        android:layout_height="555dp"
+        android:layout_height="455dp"
         android:layout_marginBottom="28dp"
+        android:autofillHints="true"
         android:ems="10"
         android:gravity="top"
+        android:hint="Write your text here"
         android:inputType="text"
-        android:text="Write your text here"
+        android:textColorHint="#989898"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Confirm"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNoteName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="true" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
